@@ -79,6 +79,11 @@
                             <constraint firstAttribute="bottom" secondItem="QvS-h8-prI" secondAttribute="bottom" id="q4n-zb-gqX"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="Prompt" destination="vfE-u7-v50" id="KrG-Cr-02J"/>
+                        <outlet property="leftButton" destination="v0l-T3-bhr" id="LBY-wM-CLc"/>
+                        <outlet property="rightButton" destination="Kki-Jg-QIE" id="1EH-DA-AL2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

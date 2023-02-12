@@ -69,4 +69,6 @@ struct GameLogic {
         Outcome("You have shamefully turned back. You have failed in your quest.",
                false)
     ]
+    
+    
 }
