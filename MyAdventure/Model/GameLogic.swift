@@ -8,18 +8,14 @@
 import Foundation
 
 struct GameLogic {
-  var round: Int = 0
   var promptIndex: Int = 0
 
-  let round_zero_prompt = [
+  let prompt = [
     // 0
     Prompt(
       "You come to a lake. You must reach the other end. Do you go: ",
       "left",
-      "right")
-  ]
-
-  let round_one_prompt = [
+      "right"),
     // 1
     Prompt(
       "You encounter and unruly heard of cows. Do you: ",
@@ -30,9 +26,6 @@ struct GameLogic {
       "You reach a steep cliff. Do you: ",
       "climb",
       "go around"),
-  ]
-
-  let round_two_prompt = [
     // 3
     Prompt(
       "Do you attempt to bribe the cows with: ",
@@ -92,12 +85,20 @@ struct GameLogic {
       false),
   ]
 
-  mutating func incrementRound() {
-    if round < 2 {
-      round += 1
-    } else {
-      round = 0
-    }
+  mutating func pickLeft() {
+    promptIndex = promptIndex * 2 + 1
+  }
+
+  mutating func pickRight() {
+    promptIndex = promptIndex * 2
+  }
+
+  func getOutcome() -> String {
+    return outcome[promptIndex].outcome
+  }
+
+  mutating func resetGame() {
+    promptIndex = 0
   }
 
   func getNextPrompt() -> String {
