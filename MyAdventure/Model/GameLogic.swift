@@ -9,6 +9,9 @@ import Foundation
 
 struct GameLogic {
   var promptIndex: Int = 0
+  var isGameOver: Bool {
+    return promptIndex >= 7
+  }
 
   let prompt = [
     // 0
@@ -94,7 +97,9 @@ struct GameLogic {
   }
 
   func getOutcome() -> String {
-    return outcome[promptIndex].outcome
+    // 7 is the logical position of the first outcome if we consider the prompts and outcomes as a tree
+    let offset = 7
+    return outcome[promptIndex - offset].outcome
   }
 
   mutating func resetGame() {
@@ -105,11 +110,11 @@ struct GameLogic {
     return prompt[promptIndex].prompt
   }
 
-  func getOptionOne() -> String {
+  func getNextLeft() -> String {
     return prompt[promptIndex].option_one
   }
 
-  func getOptionTwo() -> String {
+  func getNextRight() -> String {
     return prompt[promptIndex].option_two
   }
 }
