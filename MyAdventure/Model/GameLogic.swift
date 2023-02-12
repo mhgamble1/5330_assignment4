@@ -12,6 +12,9 @@ struct GameLogic {
   var isGameOver: Bool {
     return promptIndex >= 7
   }
+  var isGameWon: Bool {
+    return isGameOver && promptIndex % 2 == 1
+  }
 
   let prompt = [
     // 0
@@ -21,7 +24,7 @@ struct GameLogic {
       "right"),
     // 1
     Prompt(
-      "You encounter and unruly heard of cows. Do you: ",
+      "You encounter an unruly heard of cows. Do you: ",
       "bribe them",
       "intimidate them"),
     // 2
@@ -93,7 +96,7 @@ struct GameLogic {
   }
 
   mutating func pickRight() {
-    promptIndex = promptIndex * 2
+    promptIndex = promptIndex * 2 + 2
   }
 
   func getOutcome() -> String {
