@@ -48,7 +48,7 @@
                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                         <connections>
-                                                            <action selector="buttonSubmit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RFf-Vo-VBk"/>
+                                                            <action selector="leftButtonSubmit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NEk-82-LMj"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kki-Jg-QIE">
@@ -59,7 +59,7 @@
                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                         <connections>
-                                                            <action selector="buttonSubmit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vm8-nF-WeA"/>
+                                                            <action selector="rightButtonSubmit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X74-T8-74U"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
