@@ -20,8 +20,13 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func buttonSubmit(_ sender: UIButton) {
+    
+    @IBAction func leftButtonSubmit(_ sender: Any) {
         
+    }
+    
+    @IBAction func rightButtonSubmit(_ sender: Any) {
+
     }
     
     func updateUI() {
