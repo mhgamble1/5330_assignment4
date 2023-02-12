@@ -22,15 +22,19 @@ class ViewController: UIViewController {
 
     
     @IBAction func leftButtonSubmit(_ sender: Any) {
-        
+        gameLogic.pickLeft()
+        updateUI()
     }
     
     @IBAction func rightButtonSubmit(_ sender: Any) {
-
+        gameLogic.pickRight()
+        updateUI()
     }
     
     func updateUI() {
         Prompt.text = gameLogic.getNextPrompt()
+        leftButton.setTitle(gameLogic.getNextLeft(), for: .normal)
+        rightButton.setTitle(gameLogic.getNextRight(), for: .normal)
     }
     
 }
