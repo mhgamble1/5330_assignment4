@@ -40,4 +40,33 @@ struct GameLogic {
               "leap over it",
               "turn back")
     ]
+    
+    let outcome = [
+        // 7
+        Outcome("The cows are won over to your cause. You pass and reach the other side.",
+               true
+               ),
+        // 8
+        Outcome("The cows have no use for gold. They mock you mercilessly. You have failed in your quest.",
+               false
+               ),
+        // 9
+        Outcome("After a long melee, you prevail. You reach the other side without incident.",
+               true),
+        // 10
+        Outcome("You have shamefully run away. You have failed in your quest.",
+               false),
+        // 11
+        Outcome("You succeed in your leap of faith. You finish the climb and make it to the other side of the lake.",
+               true),
+        // 12
+        Outcome("You have shamefully turned back. You have failed in your quest",
+               false),
+        // 13
+        Outcome("You successfully jumped over the quicksand. You make it to the other side of the lake",
+               true),
+        // 14
+        Outcome("You have shamefully turned back. You have failed in your quest.",
+               false)
+    ]
 }
