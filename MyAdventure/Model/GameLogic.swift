@@ -70,5 +70,15 @@ struct GameLogic {
                false)
     ]
     
+    func getNextPrompt() -> String {
+        return prompt[promptIndex].prompt
+    }
     
+    func getOptionOne() -> String {
+        return prompt[promptIndex].option_one
+    }
+    
+    func getOptionTwo() -> String {
+        return prompt[promptIndex].option_two
+    }
 }

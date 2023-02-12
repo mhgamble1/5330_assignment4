@@ -47,6 +47,9 @@
                                                         <buttonConfiguration key="configuration" style="plain" title="left">
                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="buttonSubmit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RFf-Vo-VBk"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kki-Jg-QIE">
                                                         <rect key="frame" x="196.66666666666663" y="0.0" width="196.33333333333337" height="379.33333333333331"/>
@@ -55,6 +58,9 @@
                                                         <buttonConfiguration key="configuration" style="plain" title="right">
                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="buttonSubmit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vm8-nF-WeA"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
